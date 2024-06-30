@@ -2,32 +2,81 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+*{
+    background-color: #0E100F;
+    color : #FEFDE1;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+body{
+    margin: 3px 15vw;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+button{
+    background-color: #FEFDE1;
+    color: #0E100F;
+    padding: 3px 10px;
+    border-radius: 5px;
+    font-size: 13px;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.active{
+    background-color: #0E100F;
+    color: #FEFDE1;
+    border: 1px solid;
+    border-color: #FEFDE1;
+}
+
+input{
+    background-color: #0E100F;
+    width: 240px;
+}
+
+form{
+    /* color: #FEFDE1; */
+    color: white;
+    background-color: #0E100F;
+    border-radius: 10px;
+    font-size: 13px;
+    padding: 0 3px 0 10px;
+    font-size: 13px;
+    width: 280px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid white;
+
+}
+
+input:focus{
+    outline:none
+}
+
+.form-btn{
+    background-color: #0E100F;
+    color: #FEFDE1;
+}
+
+
+.main-para{
+    font-size: 1rem;
+    text-wrap: wrap;
+}
+
+/* main css styling ends here  */
+
+h1{
+    font-size: 3rem;
+}
+
+.profile_card{
+    border-left: 3px solid rebeccapurple;
+    /* border-right: 3px solid rebeccapurple; */
+}
+
+.know-more-btn{
+    background-color: #0E100F;
+    color: #FEFDE1;
+    border: 1px solid #FEFDE1;
 }
