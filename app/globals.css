@@ -98,11 +98,17 @@ input:focus{
     width: 50px;
 height: 50px;
 border-radius: 50px;
+border-color: #0E100F;
 }
 
 .know-more-btn{
     background-color: #0E100F;
     color: #FEFDE1;
-    border: 1px solid #FEFDE1;
-    box-shadow: 0 0 15px rebeccapurple;
+    border: 1px solid var(--color);
+    border-radius: 10px;
+    padding: 5px 15px;
+}
+
+.know-more-btn:hover{
+    box-shadow: 0 0 10px rebeccapurple;
 }
