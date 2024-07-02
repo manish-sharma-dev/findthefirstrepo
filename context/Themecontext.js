@@ -14,7 +14,7 @@ const ThemeProvider = ({ children }) =>{
     useEffect(()=> {
         document.documentElement.setAttribute('data-theme', theme)
         localStorage.setItem('theme',theme)
-    },[themes])
+    },[theme])
 
     const toggleTheme = () =>{
         setTheme((prevTheme) => (prevTheme === 'dark' ? 'light': 'dark'))
