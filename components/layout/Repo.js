@@ -12,11 +12,11 @@ export default function Profile({ searchData }) {
   })
 
   function openprofile(){
-    window.open(data.owner.html_url)
+    window.open(data?.owner?.html_url)
   }
 
   function openlastRepoUrl(){
-    window.open(data.html_url)
+    window.open(data?.html_url)
   }
 
   return (
@@ -26,22 +26,22 @@ export default function Profile({ searchData }) {
           <div className=' ml-24 mr-24 mt-16 overflow-auto profile_card'>
             <div className="p-3 flex justify-between gap-20">
                         <div className="text-sm">
-                            <p className="text-sm cursor-pointer" onClick={openprofile}>{data.full_name }</p> 
-                            <p className="text-xs mt-2 opacity-80 mb-5">Built by:{data.owner.login}<span className='built_by pl-3 text-xs'>{data.created_at}</span> </p>
+                            <p className="text-sm cursor-pointer" onClick={openprofile}>{data?.full_name }</p> 
+                            <p className="text-xs mt-2 opacity-80 mb-5">Built by:{data?.owner?.login}<span className='built_by pl-3 text-xs'>{data?.created_at}</span> </p>
                             <p className="text-xs mb-4">{!data.description ? 'description not avialable':data.description}</p>
 
                             <div className='flex items-center'>
-                              <p className="text-sm">{data.language}</p>
+                              <p className="text-sm">{data?.language}</p>
                               {/* <Star className='mt-6 ml-5 mr-1'  size={9}/> */}
-                              <p className='text-xs pl-3 pr-3'>star_count: {data.stargazers_count}</p> 
+                              <p className='text-xs pl-3 pr-3'>star_count: {data?.stargazers_count}</p> 
                               {/* <GitBranch className='mt-6 ml-2 mr-1' size={9}/> */}
-                              <p className='text-xs'>fork_count :{data.forks_count}</p>
+                              <p className='text-xs'>fork_count :{data?.forks_count}</p>
                             </div>
 
                         </div>
 
                         <div className='secondpart'>
-                          <img src={data.owner.avatar_url} alt='profileimg' className='secondPartImg '/>
+                          <img src={data?.owner?.avatar_url} alt='profileimg' className='secondPartImg '/>
                         </div>   
             </div>
           </div>
