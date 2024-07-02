@@ -9,8 +9,7 @@ export default function Main({ onsearch }) {
     const timeout = setTimeout(() => {
 
     const fetchFirstRepository = async ()=> {
-      const TOKEN = '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'
-
+      const TOKEN = process.env.REACT_GITHUB_API_KEY;
       const headers = {
         'Authorization': `token ${TOKEN}`,
         'Accept': 'application/vnd.github.v3+json'
